@@ -1,0 +1,474 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Gestor-De-Opiniones",
+    "dateExported": "2024-03-02T17:12:05.072Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "162fdc54-2c2a-4aba-bbbd-0f65d06d43b9",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-03-02T06:20:14.782Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "c8d60785-1ddd-47ed-aa09-d453a98016db",
+            "name": "Publications",
+            "containerId": "",
+            "created": "2024-03-02T06:20:14.783Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "e9d03c62-8e4b-4d40-a455-f9d47cf634f6",
+            "name": "Comments",
+            "containerId": "",
+            "created": "2024-03-02T06:20:14.784Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "7d2ba856-6f83-4455-82f8-093af13a1bb3",
+            "name": "Category",
+            "containerId": "",
+            "created": "2024-03-02T06:20:14.785Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "996e9142-a639-4833-be6b-fcd8140536cb",
+            "colId": "ddf61258-587a-4001-a126-eff912c9c0a7",
+            "containerId": "162fdc54-2c2a-4aba-bbbd-0f65d06d43b9",
+            "name": "RegisterUser",
+            "url": "/createUser",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-02T06:20:14.782Z",
+            "modified": "2024-03-02T16:57:59.114Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "names",
+                        "value": "Hernán Misael"
+                    },
+                    {
+                        "name": "surnames",
+                        "value": "López Pérez"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "77777777"
+                    },
+                    {
+                        "name": "mail",
+                        "value": "hlopez@kinal.edu.gt"
+                    },
+                    {
+                        "name": "username",
+                        "value": "hlopez"
+                    },
+                    {
+                        "name": "password",
+                        "value": "14141414"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "6a382468-0331-423c-abb5-c13a47f427ef",
+            "colId": "ddf61258-587a-4001-a126-eff912c9c0a7",
+            "containerId": "162fdc54-2c2a-4aba-bbbd-0f65d06d43b9",
+            "name": "Login",
+            "url": "/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-02T06:20:14.783Z",
+            "modified": "2024-03-02T16:58:36.183Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "phone",
+                        "value": "77777777",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "mail",
+                        "value": "hlopez@kinal.edu.gt",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "username",
+                        "value": "hlopez"
+                    },
+                    {
+                        "name": "password",
+                        "value": "14141414"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "3cc80177-45b8-4d44-94d4-caa92316d4af",
+            "colId": "ddf61258-587a-4001-a126-eff912c9c0a7",
+            "containerId": "c8d60785-1ddd-47ed-aa09-d453a98016db",
+            "name": "AddPublication",
+            "url": "/publications/addPublication",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-02T06:20:14.784Z",
+            "modified": "2024-03-02T17:00:16.049Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNWE5NzNiODFkMGE1ZmE4MmVmYmMiLCJwaG9uZSI6Ijc3Nzc3Nzc3IiwibWFpbCI6Imhsb3BlekBraW5hbC5lZHUuZ3QiLCJ1c2VybmFtZSI6Imhsb3BleiIsIm5hbWVzIjoiSGVybsOhbiBNaXNhZWwiLCJpYXQiOjE3MDkzOTg3MTcsImV4cCI6MTcwOTQwNTkxN30.wCtrvjYwroYnyMhVDSNIaW617GUW8Z5qCR7qEWIewbU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Comidas tradicionales"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65e35b123b81d0a5fa82efc4"
+                    },
+                    {
+                        "name": "mainText",
+                        "value": "Las comidas son demasiados deliciosas"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "61a722fb-6718-4860-aeed-734e6528ecde",
+            "colId": "ddf61258-587a-4001-a126-eff912c9c0a7",
+            "containerId": "162fdc54-2c2a-4aba-bbbd-0f65d06d43b9",
+            "name": "UpdateUser",
+            "url": "/update/65e356fd3b81d0a5fa82ef54",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-02T06:20:14.785Z",
+            "modified": "2024-03-02T16:56:42.551Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "names",
+                        "value": "Edwin Rosario"
+                    },
+                    {
+                        "name": "surnames",
+                        "value": "López Pérez"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "88888888"
+                    },
+                    {
+                        "name": "mail",
+                        "value": "rperez@kinal.edu.gt"
+                    },
+                    {
+                        "name": "username",
+                        "value": "rlopez"
+                    },
+                    {
+                        "name": "oldPassword",
+                        "value": "14141414"
+                    },
+                    {
+                        "name": "newPassword",
+                        "value": "88888888"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f812b8c7-aa24-4d5d-8452-49d619f135e7",
+            "colId": "ddf61258-587a-4001-a126-eff912c9c0a7",
+            "containerId": "c8d60785-1ddd-47ed-aa09-d453a98016db",
+            "name": "UpdatePublications",
+            "url": "/publications/update/65e358443b81d0a5fa82ef6b",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-03-02T06:20:14.786Z",
+            "modified": "2024-03-02T17:01:04.941Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNWE5NzNiODFkMGE1ZmE4MmVmYmMiLCJwaG9uZSI6Ijc3Nzc3Nzc3IiwibWFpbCI6Imhsb3BlekBraW5hbC5lZHUuZ3QiLCJ1c2VybmFtZSI6Imhsb3BleiIsIm5hbWVzIjoiSGVybsOhbiBNaXNhZWwiLCJpYXQiOjE3MDkzOTg3MTcsImV4cCI6MTcwOTQwNTkxN30.wCtrvjYwroYnyMhVDSNIaW617GUW8Z5qCR7qEWIewbU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Dante Alghiere"
+                    },
+                    {
+                        "name": "category",
+                        "value": "Catolico"
+                    },
+                    {
+                        "name": "mainText",
+                        "value": "Este libro relata el cielo y el infierno"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "07db95d5-630c-4856-89c5-fffcafac3a7f",
+            "colId": "ddf61258-587a-4001-a126-eff912c9c0a7",
+            "containerId": "c8d60785-1ddd-47ed-aa09-d453a98016db",
+            "name": "DeletePublication",
+            "url": "/publications/delete/65e35d9e3b81d0a5fa82f01d",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-03-02T06:20:14.787Z",
+            "modified": "2024-03-02T17:11:29.625Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNWE5NzNiODFkMGE1ZmE4MmVmYmMiLCJwaG9uZSI6Ijc3Nzc3Nzc3IiwibWFpbCI6Imhsb3BlekBraW5hbC5lZHUuZ3QiLCJ1c2VybmFtZSI6Imhsb3BleiIsIm5hbWVzIjoiSGVybsOhbiBNaXNhZWwiLCJpYXQiOjE3MDkzOTg3MTcsImV4cCI6MTcwOTQwNTkxN30.wCtrvjYwroYnyMhVDSNIaW617GUW8Z5qCR7qEWIewbU"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ee3daae2-ea81-41fe-9da5-d282780eb166",
+            "colId": "ddf61258-587a-4001-a126-eff912c9c0a7",
+            "containerId": "e9d03c62-8e4b-4d40-a455-f9d47cf634f6",
+            "name": "AddComments",
+            "url": "/comments/addComment",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-03-02T06:20:14.788Z",
+            "modified": "2024-03-02T17:11:11.926Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNWE5NzNiODFkMGE1ZmE4MmVmYmMiLCJwaG9uZSI6Ijc3Nzc3Nzc3IiwibWFpbCI6Imhsb3BlekBraW5hbC5lZHUuZ3QiLCJ1c2VybmFtZSI6Imhsb3BleiIsIm5hbWVzIjoiSGVybsOhbiBNaXNhZWwiLCJpYXQiOjE3MDkzOTg3MTcsImV4cCI6MTcwOTQwNTkxN30.wCtrvjYwroYnyMhVDSNIaW617GUW8Z5qCR7qEWIewbU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "publication",
+                        "value": "65e35d9e3b81d0a5fa82f01d"
+                    },
+                    {
+                        "name": "comment",
+                        "value": "Tienes toda la razón Edwin"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "2a1fa475-ead2-4af4-906c-666aed0584d7",
+            "colId": "ddf61258-587a-4001-a126-eff912c9c0a7",
+            "containerId": "e9d03c62-8e4b-4d40-a455-f9d47cf634f6",
+            "name": "DeleteComments",
+            "url": "/comments/delete/65e3586a3b81d0a5fa82ef76",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-03-02T06:20:14.789Z",
+            "modified": "2024-03-02T16:53:12.439Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNTZmZDNiODFkMGE1ZmE4MmVmNTQiLCJwaG9uZSI6IjE0MTQxNDE0IiwibWFpbCI6Imhsb3BlekBraW5hbC5lZHUuZ3QiLCJ1c2VybmFtZSI6Imhsb3BleiIsIm5hbWVzIjoiSGVybsOhbiBNaXNhZWwiLCJpYXQiOjE3MDkzOTc4MTksImV4cCI6MTcwOTQwNTAxOX0.2kmg6-xj0qnERr80Mc2SHXoz6g1LsHCEQzbP6duTtzE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3240b837-3b24-4db8-9d78-fef9733d5aa7",
+            "colId": "ddf61258-587a-4001-a126-eff912c9c0a7",
+            "containerId": "e9d03c62-8e4b-4d40-a455-f9d47cf634f6",
+            "name": "UpdateComments",
+            "url": "/comments/update/65e3595a3b81d0a5fa82ef93",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-03-02T06:20:14.790Z",
+            "modified": "2024-03-02T16:54:53.746Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNTZmZDNiODFkMGE1ZmE4MmVmNTQiLCJwaG9uZSI6IjE0MTQxNDE0IiwibWFpbCI6Imhsb3BlekBraW5hbC5lZHUuZ3QiLCJ1c2VybmFtZSI6Imhsb3BleiIsIm5hbWVzIjoiSGVybsOhbiBNaXNhZWwiLCJpYXQiOjE3MDkzOTc4MTksImV4cCI6MTcwOTQwNTAxOX0.2kmg6-xj0qnERr80Mc2SHXoz6g1LsHCEQzbP6duTtzE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "publication",
+                        "value": "65ded7ff2b3e3e241193918a"
+                    },
+                    {
+                        "name": "comment",
+                        "value": "Las autoridades no estan presentes cuando las necesitan"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "9343321c-429e-4917-9c6f-e9170c442323",
+            "colId": "ddf61258-587a-4001-a126-eff912c9c0a7",
+            "containerId": "c8d60785-1ddd-47ed-aa09-d453a98016db",
+            "name": "GetPublications",
+            "url": "/publications/getPublication",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-03-02T06:20:14.791Z",
+            "modified": "2024-03-02T17:02:07.027Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNWE5NzNiODFkMGE1ZmE4MmVmYmMiLCJwaG9uZSI6Ijc3Nzc3Nzc3IiwibWFpbCI6Imhsb3BlekBraW5hbC5lZHUuZ3QiLCJ1c2VybmFtZSI6Imhsb3BleiIsIm5hbWVzIjoiSGVybsOhbiBNaXNhZWwiLCJpYXQiOjE3MDkzOTg3MTcsImV4cCI6MTcwOTQwNTkxN30.wCtrvjYwroYnyMhVDSNIaW617GUW8Z5qCR7qEWIewbU"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "28784a6c-c764-45dc-8bdf-ceffb2e3c2bb",
+            "colId": "ddf61258-587a-4001-a126-eff912c9c0a7",
+            "containerId": "7d2ba856-6f83-4455-82f8-093af13a1bb3",
+            "name": "AddCategory",
+            "url": "/category/addCategory",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-03-02T06:20:14.792Z",
+            "modified": "2024-03-02T17:00:01.207Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNTZmZDNiODFkMGE1ZmE4MmVmNTQiLCJwaG9uZSI6IjE0MTQxNDE0IiwibWFpbCI6Imhsb3BlekBraW5hbC5lZHUuZ3QiLCJ1c2VybmFtZSI6Imhsb3BleiIsIm5hbWVzIjoiSGVybsOhbiBNaXNhZWwiLCJpYXQiOjE3MDkzOTc4MTksImV4cCI6MTcwOTQwNTAxOX0.2kmg6-xj0qnERr80Mc2SHXoz6g1LsHCEQzbP6duTtzE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nameCategory",
+                        "value": "Comidas tradicionales de Guatemala"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Son las comidas de los departamentos"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "1b56f3ed-6126-4eb4-b67c-9f0a5afa98e7",
+            "colId": "ddf61258-587a-4001-a126-eff912c9c0a7",
+            "containerId": "7d2ba856-6f83-4455-82f8-093af13a1bb3",
+            "name": "UpdateCategoty",
+            "url": "/category/update/65e357b43b81d0a5fa82ef60",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-03-02T06:20:14.793Z",
+            "modified": "2024-03-02T17:03:47.252Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNWE5NzNiODFkMGE1ZmE4MmVmYmMiLCJwaG9uZSI6Ijc3Nzc3Nzc3IiwibWFpbCI6Imhsb3BlekBraW5hbC5lZHUuZ3QiLCJ1c2VybmFtZSI6Imhsb3BleiIsIm5hbWVzIjoiSGVybsOhbiBNaXNhZWwiLCJpYXQiOjE3MDkzOTg3MTcsImV4cCI6MTcwOTQwNTkxN30.wCtrvjYwroYnyMhVDSNIaW617GUW8Z5qCR7qEWIewbU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "namecategory",
+                        "value": "Publicidad"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Carteles de comida"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "376d77a6-199a-4e37-9dab-1744bca52a33",
+            "colId": "ddf61258-587a-4001-a126-eff912c9c0a7",
+            "containerId": "7d2ba856-6f83-4455-82f8-093af13a1bb3",
+            "name": "GetCategory",
+            "url": "/category/getCategory",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-03-02T06:20:14.794Z",
+            "modified": "2024-03-02T16:45:19.987Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNTZmZDNiODFkMGE1ZmE4MmVmNTQiLCJwaG9uZSI6IjE0MTQxNDE0IiwibWFpbCI6Imhsb3BlekBraW5hbC5lZHUuZ3QiLCJ1c2VybmFtZSI6Imhsb3BleiIsIm5hbWVzIjoiSGVybsOhbiBNaXNhZWwiLCJpYXQiOjE3MDkzOTc4MTksImV4cCI6MTcwOTQwNTAxOX0.2kmg6-xj0qnERr80Mc2SHXoz6g1LsHCEQzbP6duTtzE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d076e505-c102-4fac-ac4a-ecb4e7e755ce",
+            "colId": "ddf61258-587a-4001-a126-eff912c9c0a7",
+            "containerId": "7d2ba856-6f83-4455-82f8-093af13a1bb3",
+            "name": "DeleteCategory",
+            "url": "/category/delete/65e35b123b81d0a5fa82efc4",
+            "method": "DELETE",
+            "sortNum": 140000,
+            "created": "2024-03-02T06:20:14.795Z",
+            "modified": "2024-03-02T17:09:25.750Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNWE5NzNiODFkMGE1ZmE4MmVmYmMiLCJwaG9uZSI6Ijc3Nzc3Nzc3IiwibWFpbCI6Imhsb3BlekBraW5hbC5lZHUuZ3QiLCJ1c2VybmFtZSI6Imhsb3BleiIsIm5hbWVzIjoiSGVybsOhbiBNaXNhZWwiLCJpYXQiOjE3MDkzOTg3MTcsImV4cCI6MTcwOTQwNTkxN30.wCtrvjYwroYnyMhVDSNIaW617GUW8Z5qCR7qEWIewbU"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2880"
+        }
+    }
+}
